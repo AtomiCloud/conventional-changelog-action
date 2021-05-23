@@ -1,54 +1,50 @@
 {
-	"name":            "conventional-changelog-action",
-	"version":         "3.1.0",
-	"description":     "Github Action that generates a changelog with the Conventional Changelog CLI",
-	"keywords":        [
+	"name": "conventional-changelog-action",
+	"version": "3.1.0",
+	"description": "Github Action that generates a changelog with the Conventional Changelog CLI",
+	"keywords": [
 		"actions",
 		"changelog",
 		"commits",
 		"conventional",
 		"github"
 	],
-	"scripts":         {
-		"deploy": "node script deploy",
-		"build":  "node script wp dist",
-		"dev":    "node script wp dist -w"
+	"scripts": {
+		"build": "ncc build src/index.ts"
 	},
-	"license":         "MIT",
-	"author":          {
-		"name":  "kirinnee",
+	"license": "MIT",
+	"author": {
+		"name": "kirinnee",
 		"email": "ernest@eng.atomi.cloud"
 	},
-	"main":            "dist/index.js",
-	"dependencies":    {
-		"@actions/core":                              "1.2.6",
-		"@actions/exec":                              "1.0.4",
-		"@hqoss/monads":                              "^0.4.0",
-		"@iarna/toml":                                "^2.2.5",
-		"@kirinnee/core":                             "^0.7.5",
-		"@types/conventional-recommended-bump":       "^6.0.0",
-		"@types/git-semver-tags":                     "^4.1.0",
-		"@types/semver":                              "^7.3.6",
-		"conventional-changelog":                     "3.1.23",
+	"main": "dist/index.js",
+	"dependencies": {
+		"@actions/core": "1.2.6",
+		"@actions/exec": "1.0.4",
+		"@hqoss/monads": "^0.4.0",
+		"@iarna/toml": "^2.2.5",
+		"@kirinnee/core": "^0.7.5",
+		"conventional-changelog": "3.1.23",
 		"conventional-changelog-conventionalcommits": "^4.6.0",
-		"conventional-recommended-bump":              "6.0.10",
-		"git-semver-tags":                            "4.1.0",
-		"object-path":                                "^0.11.5",
-		"semver":                                     "^7.3.2",
-		"typescript":                                 "^4.2.4",
-		"yaml":                                       "^1.10.0"
+		"conventional-recommended-bump": "6.0.10",
+		"git-semver-tags": "4.1.0",
+		"object-path": "^0.11.5",
+		"semver": "^7.3.2",
+		"typescript": "^4.2.4",
+		"yaml": "^1.10.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli":                 "11.0.0",
+		"@commitlint/cli": "11.0.0",
 		"@commitlint/config-conventional": "11.0.0",
-		"@types/conventional-changelog":   "^3.1.0",
-		"@types/iarna__toml":              "^2.0.1",
-		"@types/object-path":              "^0.11.0",
-		"@types/yaml":                     "^1.9.7",
-		"ts-loader":                       "^9.1.2",
-		"ts-node":                         "^9.1.1",
-		"webpack":                         "^5.37.0",
-		"webpack-cli":                     "^4.7.0",
-		"webpack-node-externals":          "^3.0.0"
+		"@types/conventional-changelog": "^3.1.0",
+		"@types/conventional-recommended-bump": "^6.0.0",
+		"@types/git-semver-tags": "^4.1.0",
+		"@types/iarna__toml": "^2.0.1",
+		"@types/object-path": "^0.11.0",
+		"@vercel/ncc": "^0.28.5",
+
+		"@types/semver": "^7.3.6",
+		"@types/yaml": "^1.9.7",
+		"ts-node": "^9.1.1"
 	}
 }
