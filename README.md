@@ -1,4 +1,4 @@
-# Conventional Changelog action
+    # Conventional Changelog action
 
 This action will bump version, tag commit and generate a changelog with conventional commits.
 
@@ -192,7 +192,7 @@ Github releases
 
 If you'd like to contribute to this project, all you need to do is clone and install [act](https://github.com/nektos/act) this project and run:
 
-> Make sure that `main: 'src/index.js'` is updated to `main: '../src/index.js'` inside the `action.yml`
+> Make sure that `main: 'src/index.ts'` is updated to `main: '../src/index.ts'` inside the `action.yml`
 > Note: The image used is 18 gb!
 
 ```shell

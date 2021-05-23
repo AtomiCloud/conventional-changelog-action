@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"module":                       "commonjs",
+		"target":                       "es6",
+		"sourceMap":                    true,
+		"removeComments":               false,
+		"moduleResolution":             "node",
+		"noUnusedLocals":               true,
+		"noImplicitAny":                true,
+		"noImplicitReturns":            true,
+		"noFallthroughCasesInSwitch":   true,
+		"strictNullChecks":             true,
+		"strictPropertyInitialization": true,
+		"strictFunctionTypes":          true,
+		"experimentalDecorators":       true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop":              true,
+		"lib":                          [
+			"esnext"
+		]
+	},
+	"exclude":         [
+		"node_modules"
+	]
+}
